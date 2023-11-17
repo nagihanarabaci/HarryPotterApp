@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/housesMenu"
+        android:icon="@drawable/houses_icon"
+        android:title="@string/houses" />
+    <item
+        android:id="@+id/charactersMenu"
+        android:icon="@drawable/characters_icon"
+        android:title="@string/characters" />
+    <item
+        android:id="@+id/spellsMenu"
+        android:icon="@drawable/spells_icon"
+        android:title="@string/spells" />
+</menu>

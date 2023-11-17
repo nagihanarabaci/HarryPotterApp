@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HarryPotterApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="houses">Houses</string>
+    <string name="characters">Characters</string>
+    <string name="spells">Spells</string>
+    <string name="textview">CharacterName\n</string>
+</resources>

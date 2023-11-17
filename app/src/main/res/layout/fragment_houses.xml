@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="housesFragment"
+            type="com.ao.harrypotterapp.ui.fragment.HousesFragment" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.fragment.HousesFragment">
+
+        <ImageView
+            android:id="@+id/imageViewGryffindor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gryffindor"
+            android:onClick="@{() -> housesFragment.housesOnClick(imageViewGryffindor)}"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewRavenclaw"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewSlytherin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:contentDescription="gryffindor_card" />
+
+        <ImageView
+            android:id="@+id/imageViewSlytherin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slytherin"
+            android:onClick="@{() -> housesFragment.housesOnClick(imageViewSlytherin)}"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewRavenclaw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageViewGryffindor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:contentDescription="slytherin_card" />
+
+        <ImageView
+            android:id="@+id/imageViewRavenclaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ravenclaw"
+            android:onClick="@{() -> housesFragment.housesOnClick(imageViewRavenclaw)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewHufflepuff"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSlytherin"
+            app:layout_constraintVertical_bias="0.5"
+            android:contentDescription="ravenclaw_card" />
+
+        <ImageView
+            android:id="@+id/imageViewHufflepuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hufflepuff"
+            android:onClick="@{() -> housesFragment.housesOnClick(imageViewHufflepuff)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageViewRavenclaw"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSlytherin"
+            app:layout_constraintVertical_bias="0.5"
+            android:contentDescription="hufflepuff_card" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/baseFragment">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.ao.harrypotterapp.ui.fragment.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/baseToHousesDetail"
+            app:destination="@id/housesDetailFragment" />
+        <action
+            android:id="@+id/basetoSpellsDetail"
+            app:destination="@id/spellsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/housesDetailFragment"
+        android:name="com.ao.harrypotterapp.ui.fragment.HousesDetailFragment"
+        android:label="fragment_houses_detail"
+        tools:layout="@layout/fragment_houses_detail" >
+        <argument
+            android:name="housesCardModel"
+            app:argType="com.ao.harrypotterapp.data.model.HousesCardModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/spellsDetailFragment"
+        android:name="com.ao.harrypotterapp.ui.fragment.SpellsDetailFragment"
+        android:label="fragment_spells_detail"
+        tools:layout="@layout/fragment_spells_detail" >
+        <argument
+            android:name="spells"
+            app:argType="com.ao.harrypotterapp.data.model.Spells" />
+    </fragment>
+</navigation>
