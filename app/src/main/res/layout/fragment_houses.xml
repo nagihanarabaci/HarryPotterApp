@@ -7,8 +7,6 @@
         <variable
             name="housesFragment"
             type="com.ao.harrypotterapp.ui.fragment.HousesFragment" />
-
-
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

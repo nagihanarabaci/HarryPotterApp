@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ao.harrypotterapp.data.model.HouseCharacters
 import com.ao.harrypotterapp.databinding.HousesDetailCardBinding
+import com.ao.harrypotterapp.utils.Constants
 
 class HousesDetailCardAdapter(
     private var context: Context,
@@ -28,7 +29,7 @@ class HousesDetailCardAdapter(
         val character = houseList[position]
         val design = holder.design
         design.tvHName.text = character.name
-        design.tvStudent.text = if (character.hogwartsStudent) "Student" else "Staff"
+        design.tvStudent.text = if (character.hogwartsStudent) Constants.student else Constants.staff
         design.cvHouse.setBackgroundResource(cardResource)
     }
 }

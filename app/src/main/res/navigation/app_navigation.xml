@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
-    app:startDestination="@id/baseFragment">
+    app:startDestination="@id/onboardingFragment">
 
     <fragment
         android:id="@+id/baseFragment"
@@ -34,5 +34,14 @@
         <argument
             android:name="spells"
             app:argType="com.ao.harrypotterapp.data.model.Spells" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.ao.harrypotterapp.ui.fragment.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/onboarding_to_base"
+            app:destination="@id/baseFragment" />
     </fragment>
 </navigation>

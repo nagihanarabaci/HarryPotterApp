@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name = "tvBackground">#80A9A9A9 </color>
+    <color name = "orangeColor">#E0694E </color>
 </resources>
